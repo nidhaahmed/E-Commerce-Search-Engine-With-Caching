@@ -1,0 +1,25 @@
+# ===== Java / Spring Boot =====
+target/
+*.log
+*.class
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+# ===== IntelliJ / IDE =====
+.idea/
+*.iml
+.vscode/
+
+# ===== Node / React =====
+node_modules/
+dist/
+build/
+.env
+
+# ===== Docker =====
+*.env
+docker-data/
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
