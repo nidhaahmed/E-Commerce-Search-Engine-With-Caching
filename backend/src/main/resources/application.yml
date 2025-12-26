@@ -15,6 +15,23 @@ server:
   port: 8080
 
 management:
+  health:
+    defaults:
+      enabled: false
+
+    elasticsearch:
+      enabled: false
+
+  endpoint:
+    health:
+      show-details: always
+      validate-group-membership: false
+      group:
+        liveness:
+          include: ping
+        readiness:
+          include: db
+
   endpoints:
     web:
       exposure:
