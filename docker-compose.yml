@@ -16,6 +16,7 @@ services:
         condition: service_started
     environment:
       SPRING_PROFILES_ACTIVE: docker
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
       JAVA_TOOL_OPTIONS: -Duser.timezone=Asia/Kolkata
       DB_URL: jdbc:postgresql://postgres:5432/ecommerce
       DB_USERNAME: ecommerce_user
