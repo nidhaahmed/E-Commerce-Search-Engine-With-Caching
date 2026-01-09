@@ -1,0 +1,21 @@
+{
+    "index": {
+        "analysis": {
+            "analyzer": {
+                "default": {
+                    "type": "standard"
+                }
+            },
+            "normalizer": {
+                "lowercase_normalizer": {
+                    "type": "custom",
+                    "filter": [
+                        "lowercase"
+                    ]
+                }
+            }
+        },
+        "number_of_shards": "1",
+        "number_of_replicas": "0"
+    }
+}

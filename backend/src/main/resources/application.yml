@@ -17,10 +17,10 @@ server:
 management:
   health:
     defaults:
-      enabled: false
+      enabled: true
 
     elasticsearch:
-      enabled: false
+      enabled: true
 
   endpoint:
     health:
@@ -35,4 +35,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info
+        include: health,info, mappings
